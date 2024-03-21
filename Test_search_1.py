@@ -4,7 +4,7 @@ from selene import browser, be, have
 
 @pytest.fixture()
 def open_browser():
-    """Размеры браузера при запуске"""
+    """Размер браузера при запуске"""
     browser.driver.set_window_size(1896, 1080)
     browser.open('https://google.com')
     yield browser
